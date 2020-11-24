@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2020 Subteno IT
+    See LICENSE file for full copyright and licensing details.
+-->
+<odoo>
+    <data>
+        <record id="mail_server_form_inherit" model="ir.ui.view">
+            <field name="name">ir.mail_server.form</field>
+            <field name="model">ir.mail_server</field>
+            <field name="inherit_id" ref="base.ir_mail_server_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='sequence']" position="after">
+                    <field name="force_alias_domain"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
