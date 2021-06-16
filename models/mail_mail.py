@@ -8,7 +8,6 @@ from odoo.tools import formataddr
 class MailMail(models.Model):
     _inherit = 'mail.mail'
 
-    @api.multi
     def _split_by_server(self):
         for mail in self.filtered(lambda r: not r.mail_server_id):
             user = self.env['res.users'].search([('partner_id', '=', mail.author_id.id)])
