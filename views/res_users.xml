@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2021 Subteno IT
+    See LICENSE file for full copyright and licensing details.
+-->
+<odoo>
+     <record id="view_users_form_server_mail" model="ir.ui.view">
+        <field name="name">res.users.form.mail</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='signature']" position="before">
+                <field name="server_mail_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
