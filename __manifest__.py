@@ -19,5 +19,7 @@
         'views/ir_mail_server.xml',
         'views/res_company.xml',
         'views/mail_user_alias.xml',
+        'views/res_users.xml',
+        'data/base.xml',
     ],
 }

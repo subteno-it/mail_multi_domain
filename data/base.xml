@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2021 Subteno IT
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo noupdate="1">
+    <record id="ir_config_parameter_split_server_mail" model="ir.config_parameter">
+    <field name="key">mail.split_server_mail_by_user</field>
+    <field name="value">True</field>
+    </record>
+</odoo>

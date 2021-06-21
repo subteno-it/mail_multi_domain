@@ -12,3 +12,8 @@ class ResUsers(models.Model):
         comodel_name='mail.user.alias',
         inverse_name='user_id',
     )
+    server_mail_id = fields.Many2one(
+        string='Server Mail',
+        comodel_name='ir.mail_server',
+        help='The server mail used for the user if the configuration is split server mail by user',
+    )
